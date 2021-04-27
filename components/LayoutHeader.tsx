@@ -12,7 +12,6 @@ import {
 } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
-import classes from '*.module.css';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -57,7 +56,6 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     inputInput: {
       padding: theme.spacing(1, 1, 1, 0),
-      // vertical padding + font size from searchIcon
       paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
       transition: theme.transitions.create('width'),
       width: '100%',
@@ -85,7 +83,7 @@ const LayoutHeader = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography className={classes.title} variant="h5" color="initial">
+          <Typography className={classes.title} variant="h6" color="initial">
             Next.js × Tmdb
           </Typography>
           <div className={classes.search}>
@@ -93,7 +91,7 @@ const LayoutHeader = () => {
               <SearchIcon />
             </div>
             <InputBase
-              placeholder="keyword"
+              placeholder="Search…"
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
