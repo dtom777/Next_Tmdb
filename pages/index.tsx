@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+import { NightsStaySharp } from '@material-ui/icons';
 
 const Home = ({ movies }) => {
   return (
